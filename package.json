@@ -1,0 +1,20 @@
+{
+  "name": "react-webpack-mf",
+  "version": "1.0.0",
+  "description": "A Webpack Module Federation Case In React  ·",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anderlaw/react-webpack-MF.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anderlaw/react-webpack-MF/issues"
+  },
+  "homepage": "https://github.com/anderlaw/react-webpack-MF#readme"
+}
