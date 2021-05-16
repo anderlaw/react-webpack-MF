@@ -4,7 +4,9 @@
   "description": "A Webpack Module Federation Case In React  ·",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack": "webpack --watch",
+    "serve": "serve dist -p 3000",
+    "start": "concurrently \"npm run webpack\" \"npm run serve\""
   },
   "repository": {
     "type": "git",

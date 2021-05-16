@@ -1,7 +1,6 @@
 # react-webpack-MF
 A Webpack Module Federation Case In React 
 一个基于React的Webpack Module Federation案例
-文章《》的配套案例
 # 项目结构
 ## lib-app
 底层App，负责提供框架、库的依赖，暴露`React`模块。
