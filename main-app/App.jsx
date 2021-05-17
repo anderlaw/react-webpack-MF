@@ -25,9 +25,18 @@ export default class App extends React.Component{
     render(){
       
       return (<div>
+        <h1>基础库 react、react-dom从`lib-app`加载</h1>
+        <p>
+          从`component-app`加载的Logo组件
+        </p>
           <Logo/>
+          <p>
+          从`component-app`加载的按钮组件
+        </p>
         <Button/>
-        <br/>
+        <p>
+          从`component-app`加载的对话框组件
+        </p>
         <button onClick={this.handleClick}>打开对话框</button>
         <Dialog switchVisible={this.HanldeSwitchVisible} visible={this.state.dialogVisible}/>
       </div>)
