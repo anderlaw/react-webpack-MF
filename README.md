@@ -16,8 +16,11 @@ A Webpack Module Federation Case In React
 它也是一个纯粹host。
 # 如何使用
 ## 安装依赖
+### 全局依赖
 `npm install`
+### 安装子项目依赖
+`npx lerna bootstrap`
 一个命令安装所有子项目的依赖
 ## 运行项目
 `npm run start`
-一个命令运行所有子项目
+打开浏览器`http://localhost:3002` 
