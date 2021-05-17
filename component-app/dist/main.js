@@ -378,7 +378,7 @@ var __webpack_exports__ = {};
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-Promise.all(/*! import() */[__webpack_require__.e("webpack_container_remote_lib-app_react"), __webpack_require__.e("bootstrap_js")]).then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap.js */ "./bootstrap.js"));
+Promise.all(/*! import() */[__webpack_require__.e("webpack_container_remote_lib-app_react"), __webpack_require__.e("src_Logo_jsx"), __webpack_require__.e("bootstrap_js")]).then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap.js */ "./bootstrap.js"));
 })();
 
 /******/ })()

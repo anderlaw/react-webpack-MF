@@ -12,14 +12,14 @@ export default class Dialog extends React.Component {
                         <h1>
                             What is your name ?
                         </h1>
-                      <input style={{fontSize:"18px",lineHeight:2}} type="text" />
+                        <input style={{fontSize:"18px",lineHeight:2}} type="text" />
                     </div>
                     
                 </div>
-              );
+                );
         }else{
             return null;
         }
-      
+        
     }
-  }
+}

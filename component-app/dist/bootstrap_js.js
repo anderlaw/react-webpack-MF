@@ -13,8 +13,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var lib_app_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lib-app/react */ "webpack/container/remote/lib-app/react");
 /* harmony import */ var lib_app_react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lib_app_react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _src_Dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/Dialog */ "./src/Dialog.jsx");
-/* harmony import */ var _src_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/Button */ "./src/Button.jsx");
+/* harmony import */ var _src_Logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/Logo */ "./src/Logo.jsx");
+/* harmony import */ var _src_Dialog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/Dialog */ "./src/Dialog.jsx");
+/* harmony import */ var _src_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/Button */ "./src/Button.jsx");
+
 
 
 
@@ -42,9 +44,9 @@ class App extends (lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().Componen
   }
 
   render() {
-    return /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_src_Button__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    return /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_src_Logo__WEBPACK_IMPORTED_MODULE_1__.default, null), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_src_Button__WEBPACK_IMPORTED_MODULE_3__.default, null), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
       onClick: this.handleClick
-    }, "\u6253\u5F00\u5BF9\u8BDD\u6846"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_src_Dialog__WEBPACK_IMPORTED_MODULE_1__.default, {
+    }, "\u6253\u5F00\u5BF9\u8BDD\u6846"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_src_Dialog__WEBPACK_IMPORTED_MODULE_2__.default, {
       switchVisible: this.HanldeSwitchVisible,
       visible: this.state.dialogVisible
     }));

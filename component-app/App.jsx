@@ -1,5 +1,5 @@
 import React from 'lib-app/react';
-
+import Logo from './src/Logo'
 import Dialog from './src/Dialog'
 import Button from './src/Button'
 export default class App extends React.Component{
@@ -25,8 +25,11 @@ export default class App extends React.Component{
   render(){
     
     return (<div>
+      <Logo/>
+      <br />
       <Button/>
       <br/>
+      
       <button onClick={this.handleClick}>打开对话框</button>
       <Dialog switchVisible={this.HanldeSwitchVisible} visible={this.state.dialogVisible}/>
     </div>)
