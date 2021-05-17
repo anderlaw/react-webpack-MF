@@ -30,9 +30,8 @@ module.exports = {
       },
     plugins: [
         new ModuleFederationPlugin({
-            name: "component-app",
+            name: "component_app",
             filename: "remoteEntry.js",
-            library: { type: "var", name: "component_app" },
             exposes: {
               "./Button":"./src/Button.jsx",
               "./Dialog":"./src/Dialog.jsx",

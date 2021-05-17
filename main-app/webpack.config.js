@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require('path');
 module.exports = {
     entry: "./index.js",
-    mode: "production",
+    mode: "development",
     devtool:"hidden-source-map",
     output: {
         publicPath: "http://localhost:3002/",
@@ -30,7 +30,7 @@ module.exports = {
       },
     plugins: [
         new ModuleFederationPlugin({
-            name: "main-app",
+            name: "main_app",
             remotes:{
                 "lib-app":"lib_app@http://localhost:3000/remoteEntry.js",
                 "component-app":"component_app@http://localhost:3001/remoteEntry.js"

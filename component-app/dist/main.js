@@ -5,10 +5,23 @@
 /*!***************************************************************!*\
   !*** external "lib_app@http://localhost:3000/remoteEntry.js" ***!
   \***************************************************************/
-/***/ ((module) => {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = lib_app@http://localhost:3000/remoteEntry.js;
+var __webpack_error__ = new Error();
+module.exports = new Promise((resolve, reject) => {
+	if(typeof lib_app !== "undefined") return resolve();
+	__webpack_require__.l("http://localhost:3000/remoteEntry.js", (event) => {
+		if(typeof lib_app !== "undefined") return resolve();
+		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+		var realSrc = event && event.target && event.target.src;
+		__webpack_error__.message = 'Loading script failed.\n(' + errorType + ': ' + realSrc + ')';
+		__webpack_error__.name = 'ScriptExternalLoadError';
+		__webpack_error__.type = errorType;
+		__webpack_error__.request = realSrc;
+		reject(__webpack_error__);
+	}, "lib_app");
+}).then(() => (lib_app));
 
 /***/ })
 

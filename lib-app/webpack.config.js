@@ -12,8 +12,7 @@ module.exports = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: "lib-app",
-            library: { type: "var", name: "lib_app" },
+            name: "lib_app",
             filename: "remoteEntry.js",
             exposes: {
                 "./react":"react",

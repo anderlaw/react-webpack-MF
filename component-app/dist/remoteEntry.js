@@ -9,23 +9,22 @@ var component_app;
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-	"use strict";
-	var __webpack_error__ = new Error();
-	module.exports = new Promise((resolve, reject) => {
+var __webpack_error__ = new Error();
+module.exports = new Promise((resolve, reject) => {
+	if(typeof lib_app !== "undefined") return resolve();
+	__webpack_require__.l("http://localhost:3000/remoteEntry.js", (event) => {
 		if(typeof lib_app !== "undefined") return resolve();
-		__webpack_require__.l("http://127.0.0.1:3000/remoteEntry.js", (event) => {
-			if(typeof lib_app !== "undefined") return resolve();
-			var errorType = event && (event.type === 'load' ? 'missing' : event.type);
-			var realSrc = event && event.target && event.target.src;
-			__webpack_error__.message = 'Loading script failed.\n(' + errorType + ': ' + realSrc + ')';
-			__webpack_error__.name = 'ScriptExternalLoadError';
-			__webpack_error__.type = errorType;
-			__webpack_error__.request = realSrc;
-			reject(__webpack_error__);
-		}, "lib_app");
-	}).then(() => (lib_app));
-	
-	/***/ })
+		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+		var realSrc = event && event.target && event.target.src;
+		__webpack_error__.message = 'Loading script failed.\n(' + errorType + ': ' + realSrc + ')';
+		__webpack_error__.name = 'ScriptExternalLoadError';
+		__webpack_error__.type = errorType;
+		__webpack_error__.request = realSrc;
+		reject(__webpack_error__);
+	}, "lib_app");
+}).then(() => (lib_app));
+
+/***/ })
 
 /******/ 	});
 /************************************************************************/
@@ -285,7 +284,7 @@ var component_app;
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"component-app": 0
+/******/ 			"component_app": 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = (chunkId, promises) => {
