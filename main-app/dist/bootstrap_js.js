@@ -17,8 +17,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var component_app_Button__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(component_app_Button__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var component_app_Dialog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! component-app/Dialog */ "webpack/container/remote/component-app/Dialog");
 /* harmony import */ var component_app_Dialog__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(component_app_Dialog__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var component_app_Logo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! component-app/Logo */ "webpack/container/remote/component-app/Logo");
-/* harmony import */ var component_app_Logo__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(component_app_Logo__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var component_app_ToolTip__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! component-app/ToolTip */ "webpack/container/remote/component-app/ToolTip");
+/* harmony import */ var component_app_ToolTip__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(component_app_ToolTip__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
@@ -47,11 +47,18 @@ class App extends (lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().Componen
   }
 
   render() {
-    return /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "\u57FA\u7840\u5E93 react\u3001react-dom\u4ECE`lib-app`\u52A0\u8F7D"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "\u4ECE`component-app`\u52A0\u8F7D\u7684Logo\u7EC4\u4EF6"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement((component_app_Logo__WEBPACK_IMPORTED_MODULE_3___default()), null), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "\u4ECE`component-app`\u52A0\u8F7D\u7684\u6309\u94AE\u7EC4\u4EF6"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement((component_app_Button__WEBPACK_IMPORTED_MODULE_1___default()), null), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "\u4ECE`component-app`\u52A0\u8F7D\u7684\u5BF9\u8BDD\u6846\u7EC4\u4EF6"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    return /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Open Dev Tool And Focus On Network,checkout resources details"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "react\u3001react-dom js files hosted on ", /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "lib-app")), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "components hosted on ", /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "component-app")), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Buttons:"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement((component_app_Button__WEBPACK_IMPORTED_MODULE_1___default()), {
+      type: "primary"
+    }), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement((component_app_Button__WEBPACK_IMPORTED_MODULE_1___default()), {
+      type: "warning"
+    }), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "Dialog:"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
       onClick: this.handleClick
-    }, "\u6253\u5F00\u5BF9\u8BDD\u6846"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement((component_app_Dialog__WEBPACK_IMPORTED_MODULE_2___default()), {
+    }, "click me to open Dialog"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement((component_app_Dialog__WEBPACK_IMPORTED_MODULE_2___default()), {
       switchVisible: this.HanldeSwitchVisible,
       visible: this.state.dialogVisible
+    }), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", null, "hover me please!"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement((component_app_ToolTip__WEBPACK_IMPORTED_MODULE_3___default()), {
+      content: "hover me please",
+      message: "Hello,world!"
     }));
   }
 

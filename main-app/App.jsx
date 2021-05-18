@@ -1,7 +1,7 @@
 import React from 'lib-app/react';
 import Button from 'component-app/Button'
 import Dialog from 'component-app/Dialog'
-import Logo from 'component-app/Logo'
+import ToolTip from "component-app/ToolTip"
 export default class App extends React.Component{
     constructor(props) {
       super(props)
@@ -25,20 +25,23 @@ export default class App extends React.Component{
     render(){
       
       return (<div>
-        <h1>基础库 react、react-dom从`lib-app`加载</h1>
+        <h1>Open Dev Tool And Focus On Network,checkout resources details</h1>
+        <p>react、react-dom js files hosted on <strong>lib-app</strong></p>
         <p>
-          从`component-app`加载的Logo组件
+          components hosted on <strong>component-app</strong>
         </p>
-          <Logo/>
-          <p>
-          从`component-app`加载的按钮组件
-        </p>
-        <Button/>
-        <p>
-          从`component-app`加载的对话框组件
-        </p>
-        <button onClick={this.handleClick}>打开对话框</button>
+        <h4>
+          Buttons:
+        </h4>
+        <Button type="primary"/>
+        <Button type="warning"/>
+        <h4>
+          Dialog:
+        </h4>
+        <button onClick={this.handleClick}>click me to open Dialog</button>
         <Dialog switchVisible={this.HanldeSwitchVisible} visible={this.state.dialogVisible}/>
+        <h4>hover me please!</h4>
+        <ToolTip content="hover me please" message="Hello,world!"/>
       </div>)
     }
   }

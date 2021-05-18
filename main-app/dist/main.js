@@ -194,7 +194,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 				"webpack/container/remote/lib-app/react",
 /******/ 				"webpack/container/remote/component-app/Button",
 /******/ 				"webpack/container/remote/component-app/Dialog",
-/******/ 				"webpack/container/remote/component-app/Logo",
+/******/ 				"webpack/container/remote/component-app/ToolTip",
 /******/ 				"webpack/container/remote/lib-app/react-dom"
 /******/ 			]
 /******/ 		};
@@ -214,9 +214,9 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 				"./Dialog",
 /******/ 				"webpack/container/reference/component-app"
 /******/ 			],
-/******/ 			"webpack/container/remote/component-app/Logo": [
+/******/ 			"webpack/container/remote/component-app/ToolTip": [
 /******/ 				"default",
-/******/ 				"./Logo",
+/******/ 				"./ToolTip",
 /******/ 				"webpack/container/reference/component-app"
 /******/ 			],
 /******/ 			"webpack/container/remote/lib-app/react-dom": [

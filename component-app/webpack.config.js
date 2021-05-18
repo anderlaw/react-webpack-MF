@@ -19,6 +19,10 @@ module.exports = {
             loader:'url-loader'
           },
           {
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader"],
+          },
+          {
             test: /\.jsx?$/,
             loader: "babel-loader",
             exclude: /node_modules/,
@@ -35,7 +39,8 @@ module.exports = {
             exposes: {
               "./Button":"./src/Button.jsx",
               "./Dialog":"./src/Dialog.jsx",
-              "./Logo":"./src/Logo.jsx"
+              "./Logo":"./src/Logo.jsx",
+              "./ToolTip":"./src/ToolTip.jsx"
             },
             remotes:{
                 "lib-app":"lib_app@http://localhost:3000/remoteEntry.js"

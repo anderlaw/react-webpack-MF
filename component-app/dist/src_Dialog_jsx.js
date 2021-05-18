@@ -14,6 +14,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lib_app_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lib-app/react */ "webpack/container/remote/lib-app/react");
 /* harmony import */ var lib_app_react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lib_app_react__WEBPACK_IMPORTED_MODULE_0__);
 
+const wrapperStyle = {
+  position: "fixed",
+  top: 0,
+  right: 0,
+  bottom: 0,
+  left: 0,
+  zIndex: 2000,
+  height: "100%",
+  backgroundColor: "rgba(0,0,0,.5)",
+  overflow: "auto"
+};
+const boxStyle = {
+  width: "30%",
+  margin: "0 auto 50px",
+  marginTop: "15vh",
+  padding: "20px",
+  backgroundColor: "#fff"
+};
 class Dialog extends (lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
   constructor(props) {
     super(props);
@@ -22,33 +40,21 @@ class Dialog extends (lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().Compo
   render() {
     if (this.props.visible) {
       return /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        style: {
-          position: "fixed",
-          left: 0,
-          right: 0,
-          top: 0,
-          bottom: 0,
-          backgroundColor: "rgba(0,0,0,.3)"
-        }
-      }, /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-        onClick: () => this.props.switchVisible(false),
-        style: {
-          position: "absolute",
-          top: "10px",
-          right: "10px"
-        }
-      }, "X"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-        style: {
-          marginTop: "20%",
-          textAlign: "center"
-        }
-      }, /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "What is your name ?"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+        style: wrapperStyle
+      }, /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+        style: boxStyle
+      }, /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "What is your name ?"), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
         style: {
           fontSize: "18px",
           lineHeight: 2
         },
         type: "text"
-      })));
+      })), /*#__PURE__*/lib_app_react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+        style: {
+          marginTop: "10px"
+        },
+        onClick: () => this.props.switchVisible(false)
+      }, "close It!")));
     } else {
       return null;
     }
