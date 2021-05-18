@@ -1,4 +1,22 @@
 import React from 'lib-app/react';
+const wrapperStyle = {
+    position: "fixed",
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    zIndex: 2000,
+    height: "100%",
+    backgroundColor: "rgba(0,0,0,.5)",
+    overflow: "auto"
+}
+const boxStyle = {
+    width:"30%",
+    margin: "0 auto 50px",
+    marginTop:"15vh",
+    padding:"20px",
+    backgroundColor:"#fff"
+}
 export default class Dialog extends React.Component {
     constructor(props) {
         super(props);
@@ -6,15 +24,16 @@ export default class Dialog extends React.Component {
     render() {
         if(this.props.visible){
             return (
-                <div style={{position:"fixed",left:0,right:0,top:0,bottom:0,backgroundColor:"rgba(0,0,0,.3)"}}>
-                    <button onClick={()=>this.props.switchVisible(false)} style={{position:"absolute",top:"10px",right:"10px"}}>X</button>
-                    <div style={{ marginTop:"20%",textAlign:"center"}}>
-                        <h1>
-                            What is your name ?
-                        </h1>
-                        <input style={{fontSize:"18px",lineHeight:2}} type="text" />
-                    </div>
-                    
+                <div style={wrapperStyle}>
+                   <div style={boxStyle}>
+                        <div>
+                            <p>
+                                What is your name ?
+                            </p>
+                            <input style={{fontSize:"18px",lineHeight:2}} type="text" />
+                        </div>
+                        <button style={{marginTop:"10px"}} onClick={()=>this.props.switchVisible(false)}>close It!</button>
+                   </div> 
                 </div>
                 );
         }else{
